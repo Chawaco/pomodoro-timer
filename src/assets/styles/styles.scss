@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+$color_white: #ffffff;
+$color_green: #7ebeab;
+$color_red: #fc8960;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.timer_text_work {
+  font-size: 60px;
+  color: $color_red;
+}
+
+.timer_text_break {
+  font-size: 60px;
+  color: $color_green;
+}
+
+.button_area {
+  display: flex;
+  margin: 15px 0;
+}
+
+.timer_button_work {
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: $color_red;
+  color: #ffffff;
+  font-size: 25px;
+  border: 0px;
+  border-radius: 2px;
+}
+
+.timer_button_break {
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: $color_green;
+  color: #ffffff;
+  font-size: 25px;
+  border: 0px;
+  border-radius: 2px;
+}
+
+// Custom style of circle progressbar
+.CircularProgressbar {
+  &.work {
+    .CircularProgressbar-path {
+      stroke: $color_red !important;
+    }
+  }
+  &.break {
+    .CircularProgressbar-path {
+      stroke: $color_green !important;
+    }
+  }
+}

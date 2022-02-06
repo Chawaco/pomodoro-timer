@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- added for Material-UI -->
+    <meta property="csp-nonce" content="<%= htmlWebpackPlugin.options.nonce %>" />
+    <!-- CSP Setting https://developer.mozilla.org/ja/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="base-uri 'self'; object-src 'none'; script-src 'self'; style-src 'self' 'nonce-<%= htmlWebpackPlugin.options.nonce %>';" />
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
